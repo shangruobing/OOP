@@ -1,4 +1,4 @@
-package Calculator.Module1;
+package Calculator.Module;
 
 public class Formula {
     private double a;

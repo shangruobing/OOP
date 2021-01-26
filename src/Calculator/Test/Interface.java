@@ -1,7 +1,7 @@
 package Calculator.Test;
 
-import Calculator.Module1.Formula;
-import Calculator.Module1.Result;
+import Calculator.Module.Formula;
+import Calculator.Module.Result;
 
 import javax.swing.*;
 import java.awt.*;
