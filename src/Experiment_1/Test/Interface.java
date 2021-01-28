@@ -1,16 +1,18 @@
-package Calculator.Test;
+package Experiment_1.Test;
 
-import Calculator.Module.Formula;
-import Calculator.Module.Result;
+import Experiment_1.Module.Formula;
+import Experiment_1.Module.Result;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class Interface {
-    private JTextField inputTextFieldA, inputTextFieldB, inputTextFieldC, doubleTextField;
-    private JButton solveButton, doubleButton;
-    private JTextArea resultTextArea;
-    private Result result;
+    private final JTextField inputTextFieldA;
+    private final JTextField inputTextFieldB;
+    private final JTextField inputTextFieldC;
+    private final JTextField doubleTextField;
+    private final JTextArea resultTextArea;
+    private final Result result;
 
     public Interface() {
         JPanel mainPanel = new JPanel();
@@ -20,8 +22,10 @@ public class Interface {
         mainPanel.add(new JLabel("X +"));
         mainPanel.add(inputTextFieldC = new JTextField(10));
         mainPanel.add(new JLabel("= 0"));
+        JButton solveButton;
         mainPanel.add(solveButton = new JButton("求解"));
         mainPanel.add(doubleTextField = new JTextField(5));
+        JButton doubleButton;
         mainPanel.add(doubleButton = new JButton("翻倍"));
         JFrame mainFrame = new JFrame("一元二次方程计算器");
         mainFrame.add(mainPanel, BorderLayout.NORTH);

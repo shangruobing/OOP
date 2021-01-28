@@ -1,4 +1,4 @@
-package Calculator;
+package Experiment_1;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,22 +6,19 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Solve_Equations implements ActionListener {
-    private JFrame frame;
-    private JLabel jLabel1, jLabel2, jLabel3;
-    private JButton calculate;
     private JTextField factor_A, factor_B, factor_C, textField;
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Solve_Equations solve = new Solve_Equations();
         solve.run();
     }
 
     public void run() {
-        frame = new JFrame("求解一元二次方程");
-        jLabel1 = new JLabel("X^2 +");
-        jLabel2 = new JLabel("X +");
-        jLabel3 = new JLabel("= 0");
-        calculate = new JButton("求解");
+        JFrame frame = new JFrame("求解一元二次方程");
+        JLabel jLabel1 = new JLabel("X^2 +");
+        JLabel jLabel2 = new JLabel("X +");
+        JLabel jLabel3 = new JLabel("= 0");
+        JButton calculate = new JButton("求解");
         factor_A = new JTextField(5);
         factor_B = new JTextField(5);
         factor_C = new JTextField(5);

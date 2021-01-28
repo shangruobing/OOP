@@ -1,4 +1,4 @@
-package Calculator.Test;
+package Experiment_1.Test;
 
 public class Test {
     public static void main(String [ ]args) {

@@ -1,4 +1,4 @@
-package Calculator;
+package Experiment_1;
 
 public class Factor {
     public double getA() {

@@ -1,4 +1,4 @@
-package Calculator.Module;
+package Experiment_1.Module;
 
 public class Result {
     private double root;
