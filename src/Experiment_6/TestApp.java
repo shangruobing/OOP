@@ -18,6 +18,5 @@ public class TestApp {
         for (Mammal mammal : mammals)
             System.out.println(mammal.speak());
 
-
     }
 }
