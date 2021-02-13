@@ -1,4 +1,4 @@
-package Experiment_6;
+package Experiment_5;
 
 import java.util.Arrays;
 
@@ -38,13 +38,13 @@ public class Rectangle extends Shape {
                 || pointB.equals(pointC)|| pointB.equals(pointD)|| pointC.equals(pointD));
     }
 
-    private boolean checkValid() {
+    private boolean checkValid() { //判断4个坐标是否有效
         int count = 0;
-        double[] length = new double[3];
+        double[] length = new double[3]; //记录3条线段 长 宽 对角线
         double[] side = new double[]{super.getLength(pointA, pointB), super.getLength(pointA, pointC),
                 super.getLength(pointA, pointD), super.getLength(pointB, pointC),
                 super.getLength(pointB, pointD), super.getLength(pointC, pointD)};
-        Arrays.sort(side);
+        Arrays.sort(side); // 对6条线段长度进行排序
         for (int i = 0; i < side.length - 1; i++)
             if (side[i] == side[i + 1])
                 count++;

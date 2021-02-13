@@ -1,4 +1,4 @@
-package Experiment_6;
+package Experiment_5;
 
 public class Triangle extends Shape {
     private Point pointA;

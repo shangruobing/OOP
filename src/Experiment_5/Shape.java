@@ -1,4 +1,4 @@
-package Experiment_6;
+package Experiment_5;
 
 public class Shape {
     protected Point point;
@@ -19,6 +19,9 @@ public class Shape {
         this.point = point;
     }
 
+    public double getPerimeter() {
+        return 0;
+    }
     public double getLength(Point pointA, Point pointB) {
         return Math.sqrt(Math.pow(pointA.getX() - pointB.getX(), 2) +
                 Math.pow(pointA.getY() - pointB.getY(), 2));

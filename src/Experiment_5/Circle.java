@@ -1,4 +1,4 @@
-package Experiment_6;
+package Experiment_5;
 
 public class Circle extends Shape {
 
@@ -9,8 +9,8 @@ public class Circle extends Shape {
         radius = 0;
     }
 
-    public Circle(Point p, double r) {
-        super(p);
+    public Circle(Point point, double r) {
+        super(point);
         radius = r;
     }
 
