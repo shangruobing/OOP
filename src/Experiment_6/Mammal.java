@@ -26,8 +26,8 @@ public class Mammal{
         this.weight = weight;
     }
 
-    public String getSpeak() {
-        return speak;
+    public String speak() {
+        return "I am a ";
     }
 
     public void setSpeak(String speak) {

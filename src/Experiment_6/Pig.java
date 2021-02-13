@@ -1,20 +1,23 @@
 package Experiment_6;
 
 public class Pig extends Mammal {
+    private String speak;
     private String name;
 
     public Pig() {
         super();
-        super.speak = "Oink!I am a pig. Oink!Oink!";
+        name = " ";
+        speak = "Oink!";
     }
 
     public Pig(String name) {
-        super();
         this.name = name;
-        super.speak = "Oink!I am a pig.My name is" + name + " Oink!Oink!";
+        speak = "Oink!";
     }
 
-    public String getSpeak() {
-        return super.speak;
+    public String speak() {
+        if (!name.equals(" "))
+            return speak + super.speak() + "pig.My name is " + name + "." + speak + speak;
+        return speak + super.speak() + "pig." + speak + speak;
     }
 }

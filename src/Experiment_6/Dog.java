@@ -1,19 +1,23 @@
 package Experiment_6;
 
-public class Dog extends Mammal{
-  //  private String name;
+public class Dog extends Mammal {
+    private String speak;
+    private String name;
+
     public Dog() {
         super();
-        super.speak="Woof!I am a dog. Woof!Woof!";
+        name = " ";
+        speak = "Woof!";
     }
 
     public Dog(String name) {
-        super();
-    //    this.name = name;
-        super.speak="Woof!I am a dog.My name is "+name+" woof!Woof!";
+        this.name = name;
+        speak = "Woof!";
     }
 
-    public String getSpeak(){
-        return super.speak;
+    public String speak() {
+        if (!name.equals(" "))
+            return speak + super.speak() + "dog.My name is " + name + "." + speak + speak;
+        return speak + super.speak() + "dog." + speak + speak;
     }
 }
