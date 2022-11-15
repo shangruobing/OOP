@@ -8,17 +8,16 @@ public abstract class Equation {
     @Override
     final public String toString() {
         StringBuilder formula = new StringBuilder();
-        String number;
         int power = coefs.length - 1;
         for (double coef : coefs) {
-            number = simplifyOne(coef);
+            String number = simplifyOne(coef);
             number = addPrefixPlus(number);
             formula.append(appendSuffixVariable(power, number));
             power--;
         }
-        formula = new StringBuilder(appendSuffixZero(formula.toString()));
-        formula = new StringBuilder(removePrefixPlus(formula.toString()));
-        return formula.toString();
+        String equation = appendSuffixZero(String.valueOf(formula));
+        equation = removePrefixPlus(equation);
+        return equation;
     }
 
     private String addPrefixPlus(String coef) {
