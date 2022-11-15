@@ -135,8 +135,7 @@ public class Cubic extends Equation {
      * example: a=-1,b=4,c=2,d=-5
      */
     private Complex[] discriminantLessThanZero() {
-        double t = (2 * getDiscriminantA() * getB() - 3 * getA() * getDiscriminantB())
-                / (2 * Math.sqrt(Math.pow(getDiscriminantA(), 3)));
+        double t = (2 * getDiscriminantA() * getB() - 3 * getA() * getDiscriminantB()) / (2 * Math.sqrt(Math.pow(getDiscriminantA(), 3)));
         double theta = Math.acos(t);
         double sqrtA = Math.sqrt(getDiscriminantA());
         Complex root1 = new Complex((-getB() - 2 * sqrtA * Math.cos(theta / 3)) / (3 * getA()));
